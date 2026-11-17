@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"
+  >
+
+  <meta name="theme-color" content="#39050d">
+
+  <meta
+    name="description"
+    content="Una carta especial preparada con cariño para Carmen."
+  >
+
+  <title>Para Carmen ♥</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="experience" id="experience">
+
+    <!-- FONDO ROMÁNTICO -->
+    <div class="background" aria-hidden="true">
+
+      <div class="light light-one"></div>
+      <div class="light light-two"></div>
+
+      <div class="rose rose-one">✿</div>
+      <div class="rose rose-two">✿</div>
+
+      <div class="floating-hearts" id="floatingHearts"></div>
+
+      <div class="petals" id="petals"></div>
+
+    </div>
+
+    <!-- ESCENA DEL SOBRE -->
+    <section class="envelope-scene" id="envelopeScene">
+
+      <div class="intro-decoration" aria-hidden="true">
+        <span class="intro-heart">♡</span>
+        <span class="intro-line"></span>
+      </div>
+
+      <p class="intro-message">
+        Un pequeño detalle para alguien muy especial
+      </p>
+
+      <!-- SOBRE INTERACTIVO -->
+      <button
+        class="envelope"
+        id="envelope"
+        type="button"
+        aria-label="Abrir la carta para Carmen"
+        aria-expanded="false"
+      >
+
+        <span class="envelope-shadow"></span>
+
+        <span class="envelope-back"></span>
+
+        <!-- CARTA -->
+        <span class="letter-card" id="letterCard">
+
+          <span class="letter-paper">
+
+            <span class="paper-corner paper-top-left">❧</span>
+            <span class="paper-corner paper-top-right">❧</span>
+
+            <span class="letter-ornament">♡</span>
+
+            <span class="letter-message">
+              <strong>Para Carmen, la mujer más bella.</strong>
+
+              <br><br>
+
+              Dueña de unos ojos que cautivan mi atención
+              y de una sonrisa que hechiza mi corazón.
+
+              <br>
+
+              Con esa risa radiante que despierta mi alegría
+              y un mirar que transforma lo simple en poesía.
+
+              <br><br>
+
+              Porque ningún lucero brilla como ella,
+              ni existe en el mundo una luz como ella.
+            </span>
+
+            <span class="letter-bottom-heart">♡</span>
+
+            <span class="letter-signature">
+              Atentamente,<br>
+              tu loco enamorado. ♡
+            </span>
+
+            <span class="paper-corner paper-bottom-left">❧</span>
+            <span class="paper-corner paper-bottom-right">❧</span>
+
+          </span>
+
+        </span>
+
+        <!-- PLIEGUES DEL SOBRE -->
+        <span class="envelope-left-fold"></span>
+        <span class="envelope-right-fold"></span>
+        <span class="envelope-bottom-fold"></span>
+
+        <!-- SOLAPA -->
+        <span class="envelope-flap" id="envelopeFlap"></span>
+
+        <!-- SELLO -->
+        <span class="wax-seal" id="waxSeal">
+          <span class="wax-heart">♥</span>
+        </span>
+
+      </button>
+
+      <!-- TEXTO PARA ABRIR -->
+      <button
+        class="open-text"
+        id="openText"
+        type="button"
+      >
+        <span>Abre la carta</span>
+        <span class="open-heart">♡</span>
+      </button>
+
+    </section>
+
+    <!-- ESCENA DE LECTURA -->
+    <section
+      class="reading-scene"
+      id="readingScene"
+      aria-hidden="true"
+      inert
+    >
+
+      <div class="reading-glow"></div>
+
+      <div class="reading-particles" aria-hidden="true">
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+      </div>
+
+      <button
+        class="close-button"
+        id="closeButton"
+        type="button"
+        aria-label="Cerrar la carta"
+      >
+        <span aria-hidden="true">↶</span>
+        Volver al sobre
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
